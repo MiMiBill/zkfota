@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:orientation="vertical"
+    android:paddingLeft="87px">
+
+    <!-- 标题 -->
+    <ImageView
+        android:layout_width="156px"
+        android:layout_height="42px"
+        android:layout_marginTop="104px"
+        android:background="@drawable/jhym_logo" />
+
+    <TextView
+        android:id="@+id/tvVersionName"
+        style="@style/txt_333_16"
+        android:layout_marginTop="10dp"
+        android:text="版本号:1.0" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/hide_btn"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:background="#00000000" />
+
+        <TextView
+            android:id="@+id/tv_active_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:text="PAD未激活"
+            android:textColor="#ff333333"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/tv_tip_maintain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_active_result"
+            android:layout_marginTop="18px"
+            android:text="请用中科云上运维工具扫描以上二维码进行激活!"
+            android:textColor="#ff00b7ff"
+            android:textSize="16px" />
+
+        <TextView
+            android:id="@+id/tv_active_result_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:drawableLeft="@drawable/jhym_cg"
+            android:drawablePadding="5px"
+            android:text="PAD已成功激活"
+            android:textColor="#ff24d095"
+            android:textSize="30px"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_active_result_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:drawableLeft="@drawable/jhym_sb"
+            android:drawablePadding="5px"
+            android:text="PAD激活失败"
+            android:textColor="#fff64848"
+            android:textSize="30px"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_tip_maintain_zk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_active_result_success"
+            android:layout_marginTop="12px"
+            android:text="辛苦了运维同事，感谢您的不辞辛劳！"
+            android:textColor="#ff666666"
+            android:textSize="16px"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvIccid"
+        style="@style/txt_333_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12px"
+        tools:text="iccid:123456798798978564654" />
+
+    <TextView
+        android:id="@+id/tvImei"
+        style="@style/txt_333_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12px"
+        tools:text="imei:123456798798978564654" />
+
+    <!-- 二维码 -->
+    <ImageView
+        android:id="@+id/iv_active_pad_qrcode"
+        android:layout_width="208px"
+        android:layout_height="208px"
+        android:layout_marginTop="47px" />
+
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="164px"
+        android:layout_height="46px"
+        android:layout_gravity="right"
+        android:layout_marginTop="108px"
+        android:layout_marginRight="108px"
+        android:background="@drawable/shape_button_bg_blue"
+        android:text="下一步"
+        android:textColor="#ffffffff"
+        android:textSize="20px"
+        android:visibility="gone" />
+
+</LinearLayout>
